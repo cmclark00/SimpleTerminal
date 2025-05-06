@@ -5,6 +5,8 @@ include makefiles/config.mk
 
 ifeq ($(UNION_PLATFORM),rg35xxplus)
 include makefiles/config-rg35xxplus.mk
+else ifeq ($(UNION_PLATFORM),aarch64)
+include makefiles/config-aarch64.mk
 else ifeq ($(UNION_PLATFORM),upscale)
 include makefiles/config-generic-linux-upscale.mk
 endif

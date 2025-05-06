@@ -55,6 +55,18 @@ For RG35XX Plus:
     ./build-rg35xxplus.sh
     (or run inside rg35xxplus-toolchain docker container: UNION_PLATFORM=rg35xxplus make)
 
+For aarch64 (ARM64) architecture:
+
+    # On Linux:
+    ./build-aarch64.sh
+    # Or directly:
+    UNION_PLATFORM=aarch64 make
+
+    # On Windows (with suitable toolchain installed):
+    build-aarch64.bat
+    # Or via MSYS2/Git Bash:
+    UNION_PLATFORM=aarch64 mingw32-make
+
 For generic linux (with bigger window size)
 
     UNION_PLATFORM=upscale make
